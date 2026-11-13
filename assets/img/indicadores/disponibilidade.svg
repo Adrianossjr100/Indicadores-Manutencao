@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16294A"/><stop offset="1" stop-color="#0B1626"/></linearGradient>
+<clipPath id="card"><rect width="480" height="320" rx="24"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+<rect width="480" height="320" fill="url(#bg)"/>
+<circle cx="430" cy="40" r="90" fill="#ffffff" opacity="0.03"/>
+<circle cx="40" cy="300" r="110" fill="#ffffff" opacity="0.03"/>
+<circle cx="150" cy="130" r="72" fill="none" stroke="#EF4444" stroke-width="20" opacity="0.8"/><circle cx="150" cy="130" r="72" fill="none" stroke="#22C55E" stroke-width="20" stroke-linecap="round" stroke-dasharray="398.1 452.4" transform="rotate(-90 150 130)"/><path d="M167.2,105.4 A30,30 0 1 1 132.8,105.4" fill="none" stroke="#E2E8F0" stroke-width="9" stroke-linecap="round"/><line x1="150" y1="88" x2="150" y2="122" stroke="#E2E8F0" stroke-width="9" stroke-linecap="round"/><circle cx="262" cy="83" r="7" fill="#1B3155" stroke="#E2E8F0" stroke-width="2.5"/><clipPath id="r0"><rect x="280" y="74" width="160" height="18" rx="9"/></clipPath><g clip-path="url(#r0)"><rect x="280.0" y="74" width="62.7" height="18" fill="#22C55E"/><rect x="342.2" y="74" width="11.2" height="18" fill="#EF4444"/><rect x="352.9" y="74" width="87.6" height="18" fill="#22C55E"/></g><circle cx="262" cy="131" r="7" fill="#1B3155" stroke="#E2E8F0" stroke-width="2.5"/><clipPath id="r1"><rect x="280" y="122" width="160" height="18" rx="9"/></clipPath><g clip-path="url(#r1)"><rect x="280.0" y="122" width="107.2" height="18" fill="#22C55E"/><rect x="386.7" y="122" width="7.6" height="18" fill="#EF4444"/><rect x="393.8" y="122" width="46.7" height="18" fill="#22C55E"/></g><circle cx="262" cy="179" r="7" fill="#1B3155" stroke="#E2E8F0" stroke-width="2.5"/><clipPath id="r2"><rect x="280" y="170" width="160" height="18" rx="9"/></clipPath><g clip-path="url(#r2)"><rect x="280.0" y="170" width="36.1" height="18" fill="#22C55E"/><rect x="315.6" y="170" width="9.4" height="18" fill="#EF4444"/><rect x="324.4" y="170" width="80.5" height="18" fill="#22C55E"/><rect x="404.4" y="170" width="12.9" height="18" fill="#EF4444"/><rect x="416.9" y="170" width="23.6" height="18" fill="#22C55E"/></g>
+<rect x="36" y="250" width="6" height="48" rx="3" fill="#22C55E"/>
+<text x="54" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#E2E8F0">Disponibilidade</text>
+<text x="54" y="297" font-family="Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="0.5" fill="#9FB0CC">Tempo disponível para operar</text>
+</g>
+</svg>

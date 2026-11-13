@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16294A"/><stop offset="1" stop-color="#0B1626"/></linearGradient>
+<clipPath id="card"><rect width="480" height="320" rx="24"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+<rect width="480" height="320" fill="url(#bg)"/>
+<circle cx="430" cy="40" r="90" fill="#ffffff" opacity="0.03"/>
+<circle cx="40" cy="300" r="110" fill="#ffffff" opacity="0.03"/>
+<rect x="250" y="50" width="190" height="170" rx="12" fill="#1B3155"/><polyline points="272,66 272,200 424,200" fill="none" stroke="#5B6F8F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><polygon points="272.0,80.0 277.0,89.3 282.0,97.9 287.0,105.8 292.0,113.1 297.0,119.8 302.0,126.0 307.0,131.8 312.0,137.1 317.0,141.9 322.0,146.4 327.0,150.6 332.0,154.4 337.0,157.9 342.0,161.2 347.0,164.2 352.0,167.0 357.0,169.5 362.0,171.9 367.0,174.1 372.0,176.1 377.0,177.9 382.0,179.6 387.0,181.2 392.0,182.7 397.0,184.0 402.0,185.3 407.0,186.4 412.0,187.5 417.0,188.4 417.0,200 272,200" fill="#F59E0B" opacity="0.18"/><polyline points="272.0,80.0 277.0,89.3 282.0,97.9 287.0,105.8 292.0,113.1 297.0,119.8 302.0,126.0 307.0,131.8 312.0,137.1 317.0,141.9 322.0,146.4 327.0,150.6 332.0,154.4 337.0,157.9 342.0,161.2 347.0,164.2 352.0,167.0 357.0,169.5 362.0,171.9 367.0,174.1 372.0,176.1 377.0,177.9 382.0,179.6 387.0,181.2 392.0,182.7 397.0,184.0 402.0,185.3 407.0,186.4 412.0,187.5 417.0,188.4" fill="none" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><text x="300" y="82" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-style="italic" font-weight="700" fill="#E2E8F0">R(t)</text><text x="418" y="216" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-style="italic" fill="#9FB0CC">t</text><path d="M135,38 L207,62 V128 C207,178 173,208 135,224 C97,208 63,178 63,128 V62 Z" fill="#38BDF8"/><path d="M135,38 L207,62 V128 C207,178 173,208 135,224 Z" fill="#0EA5E9"/><path d="M135,56 L191,75 V128 C191,167 165,191 135,205 C105,191 79,167 79,128 V75 Z" fill="none" stroke="#fff" stroke-width="3" opacity="0.35"/><polyline points="105,130 127,153 167,105" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="36" y="250" width="6" height="48" rx="3" fill="#A78BFA"/>
+<text x="54" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#E2E8F0">Confiabilidade</text>
+<text x="54" y="297" font-family="Segoe UI, Arial, sans-serif" font-size="13" letter-spacing="0.5" fill="#9FB0CC">Probabilidade de operar sem falhar</text>
+</g>
+</svg>
