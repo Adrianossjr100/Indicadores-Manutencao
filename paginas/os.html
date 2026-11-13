@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Manutenção-Ordens de Serviço</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/os.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="voltar">&larr; Página inicial</a>
+        </nav>
+        <h1>Ordens de Serviço</h1>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2 id="tituloFormulario">Nova Ordem de Serviço</h2>
+
+            <label for="data">Data de abertura</label>
+            <input type="date" id="data">
+
+            <label for="setor">Setor</label>
+            <select id="setor">
+                <option value="">Selecione</option>
+            </select>
+
+            <label for="maquina">Máquina</label>
+            <select id="maquina">
+                <option value="">Escolha o setor primeiro</option>
+            </select>
+
+            <label for="funcionario">Funcionário responsável</label>
+            <select id="funcionario">
+                <option value="">Selecione</option>
+            </select>
+
+            <label for="tipo">Tipo de manutenção</label>
+            <select id="tipo">
+                <option value="">Selecione</option>
+                <option value="Corretiva">Corretiva</option>
+                <option value="Preventiva">Preventiva</option>
+                <option value="Preditiva">Preditiva</option>
+            </select>
+
+            <label for="descricao">Descrição do serviço</label>
+            <textarea id="descricao" rows="3" placeholder="Ex.: Motor do torno não liga"></textarea>
+
+            <label for="inicio">Início do reparo</label>
+            <input type="datetime-local" id="inicio">
+
+            <label for="fim">Fim do reparo</label>
+            <input type="datetime-local" id="fim">
+
+            <label for="status">Status</label>
+            <select id="status">
+                <option value="Aberta">Aberta</option>
+                <option value="Em andamento">Em andamento</option>
+                <option value="Concluída">Concluída</option>
+            </select>
+
+            <button type="button" id="btnSalvar">Abrir OS</button>
+            <button type="button" id="btnCancelar" hidden>Cancelar edição</button>
+            <p id="mensagem"></p>
+        </section>
+
+        <h2>Ordens de Serviço</h2>
+
+        <label for="filtroSetor">Setor:</label>
+        <select id="filtroSetor">
+            <option value="">Todos</option>
+        </select>
+
+        <label for="filtroStatus">Status:</label>
+        <select id="filtroStatus">
+            <option value="">Todos</option>
+            <option value="Aberta">Aberta</option>
+            <option value="Em andamento">Em andamento</option>
+            <option value="Concluída">Concluída</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>Data</th>
+                    <th>Setor</th>
+                    <th>Máquina</th>
+                    <th>Funcionário</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Tempo de Reparo</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaOS">
+
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>

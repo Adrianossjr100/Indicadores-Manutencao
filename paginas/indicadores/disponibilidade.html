@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Manutenção-Disponibilidade</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/indicadores.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="voltar">&larr; Página inicial</a>
+            <a href="/paginas/indicadores/indicadores.html" class="voltar">&larr; Indicadores</a>
+        </nav>
+        <h1>Disponibilidade</h1>
+    </header>
+
+    <main>
+        <p>Calculada automaticamente com os valores preenchidos nas páginas de MTBF e MTTR.</p>
+
+        <label for="filtroSetor">Filtrar por setor:</label>
+        <select id="filtroSetor">
+            <option value="">Todos os setores</option>
+        </select>
+
+        <table>
+
+             <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Equipamento</th>
+                    <th>Setor</th>
+                    <th>MTBF</th>
+                    <th>MTTR</th>
+                    <th>Disponibilidade</th>
+                </tr>
+             </thead>
+             <tbody id="TabelaDisponibilidade" data-indicador="disponibilidade">
+
+             </tbody>
+
+        </table>
+
+        <h2>Resultado por Setor</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Setor</th>
+                    <th>Nº de Máquinas</th>
+                    <th>Disponibilidade</th>
+                </tr>
+            </thead>
+            <tbody id="resumoSetores">
+
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.formulario select,
+.formulario textarea {
+    width: 95%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+#mensagem {
+    color: #175789;
+}
+
+/* Status das Ordens de Serviço */
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.status-aberta {
+    background-color: #c0392b;
+}
+
+.status-em-andamento {
+    background-color: #e0a800;
+    color: black;
+}
+
+.status-concluida {
+    background-color: #2e8b57;
+}

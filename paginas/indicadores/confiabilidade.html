@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Manutenção-Confiabilidade</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/indicadores.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="voltar">&larr; Página inicial</a>
+            <a href="/paginas/indicadores/indicadores.html" class="voltar">&larr; Indicadores</a>
+        </nav>
+        <h1>Confiabilidade</h1>
+    </header>
+
+    <main>
+        <p>O MTBF vem da página de MTBF. Informe por quantas horas quer saber a chance de a máquina funcionar sem falhar.</p>
+
+        <label for="filtroSetor">Filtrar por setor:</label>
+        <select id="filtroSetor">
+            <option value="">Todos os setores</option>
+        </select>
+
+        <table>
+
+             <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Equipamento</th>
+                    <th>Setor</th>
+                    <th>MTBF</th>
+                    <th>Tempo de Operação (h)</th>
+                    <th>Confiabilidade</th>
+                </tr>
+             </thead>
+             <tbody id="TabelaConfiabilidade" data-indicador="confiabilidade">
+
+             </tbody>
+
+        </table>
+
+        <h2>Resultado por Setor</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Setor</th>
+                    <th>Nº de Máquinas</th>
+                    <th>Confiabilidade Média</th>
+                </tr>
+            </thead>
+            <tbody id="resumoSetores">
+
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>

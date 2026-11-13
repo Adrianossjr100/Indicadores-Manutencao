@@ -5,34 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJ Manutenção-MTTR</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
     <script src="/js/indicadores.js" defer></script>
 </head>
 <body>
     <header>
+        <nav>
+            <a href="/index.html" class="voltar">&larr; Página inicial</a>
+            <a href="/paginas/indicadores/indicadores.html" class="voltar">&larr; Indicadores</a>
+        </nav>
         <h1>MTTR</h1>
     </header>
 
     <main>
+        <label for="filtroSetor">Filtrar por setor:</label>
+        <select id="filtroSetor">
+            <option value="">Todos os setores</option>
+        </select>
+
         <table>
 
              <thead>
                 <tr>
                     <th>Código</th>
                     <th>Equipamento</th>
+                    <th>Setor</th>
                     <th>Tempo Total de Reparo (h)</th>
                     <th>Nº de Reparos</th>
                     <th>MTTR</th>
-                    <th>Ações</th>
                 </tr>
              </thead>
-             <tbody id="TabelaMTTR">
+             <tbody id="TabelaMTTR" data-indicador="mttr">
 
              </tbody>
 
         </table>
-        <button type="button" id="btnAdicionar">
-            + Adicionar Equipamento
-        </button>
+
+        <h2>Resultado por Setor</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Setor</th>
+                    <th>Nº de Máquinas</th>
+                    <th>MTTR</th>
+                </tr>
+            </thead>
+            <tbody id="resumoSetores">
+
+            </tbody>
+        </table>
     </main>
     
 </body>

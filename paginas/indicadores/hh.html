@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Manutenção-Homem Hora</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/indicadores.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="voltar">&larr; Página inicial</a>
+            <a href="/paginas/indicadores/indicadores.html" class="voltar">&larr; Indicadores</a>
+        </nav>
+        <h1>Homem Hora</h1>
+    </header>
+
+    <main>
+        <table>
+
+             <thead>
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Tipo de Manutenção</th>
+                    <th>Horas por Dia</th>
+                    <th>Dias Trabalhados</th>
+                    <th>Horas Disponíveis</th>
+                    <th>Horas Apontadas (HH)</th>
+                    <th>Aproveitamento</th>
+                </tr>
+             </thead>
+             <tbody id="TabelaHH" data-indicador="hh">
+
+             </tbody>
+
+        </table>
+
+        <h2>Resumo por Tipo de Manutenção</h2>
+        <ul id="resumoHH">
+        </ul>
+    </main>
+    
+</body>
+</html>

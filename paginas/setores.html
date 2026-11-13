@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Manutenção-Setores</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/setores.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="voltar">&larr; Página inicial</a>
+        </nav>
+        <h1>Setores</h1>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <label for="codigo">Código do setor</label>
+            <input type="text" id="codigo" placeholder="Ex.: S01">
+
+            <label for="nome">Nome do setor</label>
+            <input type="text" id="nome" placeholder="Ex.: Usinagem">
+
+            <button type="button" id="btnCadastrar">Cadastrar</button>
+            <p id="mensagem"></p>
+        </section>
+
+        <h2>Setores cadastrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Setor</th>
+                    <th>Nº de Máquinas</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaSetores">
+
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>
