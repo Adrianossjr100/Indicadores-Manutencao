@@ -46,3 +46,68 @@
 .status-concluida {
     background-color: #2e8b57;
 }
+
+.status-aguardando-material {
+    background-color: #e67e22;
+}
+
+.status-fechada {
+    background-color: #2e8b57;
+}
+
+/* Página de Falhas */
+.formulario h3 {
+    margin: 20px 0 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #2476b8;
+    color: #175789;
+}
+
+.seletor-funcionarios {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.seletor-funcionarios input {
+    flex: 1;
+}
+
+.seletor-funcionarios button {
+    margin-top: 0;
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.etiqueta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #e3eef8;
+    border: 1px solid #2476b8;
+    border-radius: 14px;
+    padding: 2px 4px 2px 10px;
+}
+
+.etiqueta button {
+    margin: 0;
+    padding: 0 7px;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.analise {
+    background-color: #f2f6fa;
+    border-left: 4px solid #2476b8;
+    padding: 10px 16px;
+    margin: 4px 0 12px;
+}
+
+.analise p {
+    margin: 6px 0;
+}

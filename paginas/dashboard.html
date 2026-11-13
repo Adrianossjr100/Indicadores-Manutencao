@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Manutenção-Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="voltar">&larr; Página inicial</a>
+        </nav>
+        <h1>Dashboard</h1>
+    </header>
+
+    <main class="dashboard">
+        <div class="filtros">
+            <label for="filtroSetor">Setor:</label>
+            <select id="filtroSetor">
+                <option value="">Todos os setores</option>
+            </select>
+        </div>
+
+        <!-- Números principais -->
+        <section class="cartoes" id="cartoes"></section>
+
+        <!-- Gráficos -->
+        <section class="graficos">
+            <div class="painel">
+                <h2>Disponibilidade por setor</h2>
+                <div class="barras" id="graficoDisponibilidade"></div>
+            </div>
+
+            <div class="painel">
+                <h2>Tempo de máquina parada por setor (falhas)</h2>
+                <div class="barras" id="graficoParada"></div>
+            </div>
+
+            <div class="painel">
+                <h2>MTBF por setor</h2>
+                <div class="barras" id="graficoMTBF"></div>
+            </div>
+
+            <div class="painel">
+                <h2>MTTR por setor</h2>
+                <div class="barras" id="graficoMTTR"></div>
+            </div>
+
+            <div class="painel">
+                <h2>Máquinas com mais falhas</h2>
+                <div class="barras" id="graficoFalhasMaquina"></div>
+            </div>
+
+            <div class="painel">
+                <h2>Ordens de Serviço por status</h2>
+                <div class="barras" id="graficoOS"></div>
+            </div>
+        </section>
+
+        <!-- Pendências -->
+        <section class="painel">
+            <h2>Falhas em aberto</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nº</th>
+                        <th>Máquina</th>
+                        <th>Setor</th>
+                        <th>Impacto</th>
+                        <th>Status</th>
+                        <th>Aberta há</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaPendencias">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+</body>
+</html>

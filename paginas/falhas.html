@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Manutenção-Falhas</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/falhas.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html" class="voltar">&larr; Página inicial</a>
+        </nav>
+        <h1>Falhas Críticas</h1>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2 id="tituloFormulario">Registrar Falha</h2>
+
+            <h3>Ocorrência</h3>
+
+            <label for="dataFalha">Data e hora da falha</label>
+            <input type="datetime-local" id="dataFalha">
+
+            <label for="setor">Setor</label>
+            <select id="setor">
+                <option value="">Selecione</option>
+            </select>
+
+            <label for="maquina">Máquina</label>
+            <select id="maquina">
+                <option value="">Escolha o setor primeiro</option>
+            </select>
+
+            <label for="impacto">Impacto na produção</label>
+            <select id="impacto">
+                <option value="">Selecione</option>
+                <option value="Parada total">Parada total</option>
+                <option value="Parada parcial">Parada parcial</option>
+                <option value="Redução de produção">Redução de produção</option>
+                <option value="Risco à segurança">Risco à segurança</option>
+            </select>
+
+            <label for="descricao">O que aconteceu</label>
+            <textarea id="descricao" rows="3" placeholder="Ex.: Eixo principal do torno quebrou durante a usinagem"></textarea>
+
+            <label for="comoAconteceu">Como aconteceu</label>
+            <textarea id="comoAconteceu" rows="3" placeholder="Condições no momento: operação, carga, sinais antes da quebra..."></textarea>
+
+            <h3>Análise</h3>
+
+            <label for="causa">Causa raiz</label>
+            <textarea id="causa" rows="3" placeholder="Ex.: Rolamento sem lubrificação travou e forçou o eixo"></textarea>
+
+            <label for="buscaFuncionario">Funcionários que atuaram</label>
+            <div class="seletor-funcionarios">
+                <input type="text" id="buscaFuncionario" list="opcoesFuncionarios"
+                       placeholder="Digite o nome ou a matrícula">
+                <datalist id="opcoesFuncionarios"></datalist>
+                <button type="button" id="btnAdicionarFuncionario">Adicionar</button>
+            </div>
+            <div id="listaAtuaram" class="etiquetas"></div>
+
+            <label for="os">Ordem de Serviço ligada (opcional)</label>
+            <select id="os">
+                <option value="">Nenhuma</option>
+            </select>
+
+            <h3>Situação</h3>
+
+            <label for="status">Status</label>
+            <select id="status">
+                <option value="Aberta">Aberta</option>
+                <option value="Aguardando material">Aguardando material</option>
+                <option value="Fechada">Fechada</option>
+            </select>
+
+            <div id="blocoMaterial" hidden>
+                <label for="material">Material aguardado</label>
+                <input type="text" id="material" placeholder="Ex.: Rolamento 6205 e eixo novo">
+
+                <label for="previsao">Previsão de chegada</label>
+                <input type="date" id="previsao">
+            </div>
+
+            <label for="solucao">Como foi resolvido</label>
+            <textarea id="solucao" rows="3" placeholder="O que foi feito para a máquina voltar a funcionar"></textarea>
+
+            <label for="acoes">Ações para não acontecer de novo</label>
+            <textarea id="acoes" rows="3" placeholder="Ex.: Incluir lubrificação semanal no plano preventivo"></textarea>
+
+            <label for="dataResolucao">Data e hora em que voltou a funcionar</label>
+            <input type="datetime-local" id="dataResolucao">
+
+            <button type="button" id="btnSalvar">Registrar falha</button>
+            <button type="button" id="btnCancelar" hidden>Cancelar edição</button>
+            <p id="mensagem"></p>
+        </section>
+
+        <h2>Falhas Registradas</h2>
+
+        <label for="filtroSetor">Setor:</label>
+        <select id="filtroSetor">
+            <option value="">Todos</option>
+        </select>
+
+        <label for="filtroStatus">Status:</label>
+        <select id="filtroStatus">
+            <option value="">Todos</option>
+            <option value="Aberta">Aberta</option>
+            <option value="Aguardando material">Aguardando material</option>
+            <option value="Fechada">Fechada</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>Data</th>
+                    <th>Setor</th>
+                    <th>Máquina</th>
+                    <th>Impacto</th>
+                    <th>O que aconteceu</th>
+                    <th>Tempo Parada</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="listaFalhas">
+
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>
